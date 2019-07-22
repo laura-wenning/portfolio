@@ -1,0 +1,19 @@
+{
+  "name": "laurawenning",
+  "version": "1.0.0",
+  "description": "Resume Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-waffles/hey-waffles.github.io.git"
+  },
+  "author": "Laura Robin Wenning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hey-waffles/hey-waffles.github.io/issues"
+  },
+  "homepage": "https://github.com/hey-waffles/hey-waffles.github.io#readme"
+}
