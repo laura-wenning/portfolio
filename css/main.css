@@ -45,9 +45,9 @@ body {
     height: 9em;
     position: relative;
     top: -8.75em;
-    background-image: url("/images/placeholder.png");
+    background-image: url("/images/profile.jpeg");
     background-position: 0.0em -0.3em;
-    background-size: 125%; }
+    background-size: 110%; }
 
 .resume-body {
   position: relative;
