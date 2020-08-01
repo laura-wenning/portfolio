@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nexport default function OldVersion() {\n  return __jsx(React.Fragment, null, \"I swear there was something here before...\");\n}","map":null,"metadata":{},"sourceType":"module"}
