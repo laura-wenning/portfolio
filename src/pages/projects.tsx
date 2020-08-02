@@ -68,8 +68,23 @@ export default function Projects() {
       </ProjectCard>
 
       <ProjectCard 
+        title="Ozone" 
+        github="https://github.com/hey-waffles/ozone"
+        align="right"
+      >
+        <p>
+          Ozone is a lower-priority project with the intention of serving as a catch-all for webapp projects that
+          are too small to merit their own project. 
+        </p>
+
+        <p>
+          Ozone is named after a character from a Dungeons &amp; Dragons.
+        </p>
+      </ProjectCard>
+
+      <ProjectCard 
         title="Home Lab"
-        align="right" 
+        align="left" 
       >
         <p>
           My home lab is an on-going project to provide myself and my friends with the platform and tools to 
