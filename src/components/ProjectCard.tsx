@@ -1,7 +1,9 @@
 import React, { ReactNode } from "react";
 import { Card, Button } from "react-bootstrap";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 interface ProjectCardProps {
+  align?: "left" | "right";
   children: ReactNode;
   github?: string;
   title: string;
@@ -14,49 +16,59 @@ interface CheckItOutProps {
 }
 
 interface CheckOutItemProps {
+  icon: ReactNode;
   link: string;
   text: string;
 }
+
+const checkItOutFields = [
+  {
+    title: "Github",
+    key: "github",
+    icon: <FaGithub/>,
+  },
+  {
+    title: "Visit",
+    key: "url",
+    icon: <FaGlobe/>,
+  }
+]
 
 function CheckItOutItem(props: CheckOutItemProps) {
   return (
     <a href={props.link}>
       <Button size="sm">
-        {props.text}
+        {props.text}&nbsp;
+        {props.icon}
       </Button>
     </a>
   )
 }
 
 function CheckItOut(props: CheckItOutProps) {
-  // Checks if all arguments are undefined. If true, return nothing
-  let allUndefined = true;
-  Object.keys(props).forEach(item => {
-    allUndefined = allUndefined && props[item] === undefined;
+  const checkItOutItems: ReactNode[] = []
+
+  checkItOutFields.forEach((field: any) => {
+    if (props[field.key] !== undefined) {
+      checkItOutItems.push(<CheckItOutItem link={props[field.key]} text={field.title} icon={field.icon}/>);
+    }
   });
 
-  if (allUndefined === true) {
+  if (checkItOutItems.length === 0) {
     return null;
   }
 
-  const checkItOutItems: ReactNode[] = []
-  if (props.github !== undefined) {
-    checkItOutItems.push(<CheckItOutItem link={props.github} text="Github"/>);
-  }
+  return <>Check it out here: {checkItOutItems}</>; 
 
-  if (props.url !== undefined) {
-    checkItOutItems.push(<CheckItOutItem link={props.url} text="Visit"/>);
-  }
-
-  return <>Check it out here: {checkItOutItems}</>;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
 
 
   return (
-    <Card>
-      <Card.Body>
+    <Card align={props.align}>
+      <Card.Body >
+        <h3>{props.title}</h3>
         {props.children}
 
         <CheckItOut url={props.url} github={props.github}/>
