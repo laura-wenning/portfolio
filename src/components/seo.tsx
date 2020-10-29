@@ -13,7 +13,7 @@ function SEO({ description, lang, meta, title }) {
 
 
   const metaDescription = description || ""
-  const defaultTitle = ""
+  const defaultTitle = "Laura Wenning's Portfolio"
 
   return (
     <Helmet
@@ -45,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: `Laura Wenning`,
         },
         {
           name: `twitter:title`,
