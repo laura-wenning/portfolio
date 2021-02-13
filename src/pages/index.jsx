@@ -1,60 +1,22 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { ThemeProvider, Layout } from "theme-ui"
-import theme from "gatsby-theme-scarlet/src/gatsby-plugin-theme-ui";
-import { Global } from "@emotion/core"
-import { globalStyles } from "gatsby-theme-scarlet/src/templates/styles"
-import Header from "../components/header";
-import Hero from "../components/hero";
-import Helmet from "react-helmet"
-import { SectionWrap } from "gatsby-theme-scarlet/src/components/styles"
+import Hero from "../components/Hero";
+import Page from "../components/Page";
+
 import { Section } from "gatsby-theme-scarlet/src/components"
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          siteTitleShort
-          author
-          siteLogoText
-          siteUrl
-          language
-          description
-          siteKeywords
-        }
-      }
-    }
-  `); 
-
-  const {
-    title,
-    siteLogoText,
-    description,
-    language,
-  } = data.site.siteMetadata
-  // console.log(theme)
-
+function Index() {
   return (
-    <ThemeProvider theme={theme}>
-      <Layout>
-        <Helmet>
-          <html lang={language} />
-          <title>{title}</title>
-          <meta name="Description" content={description} />
-        </Helmet>
-        <Global styles={globalStyles} />
-        <Header />
-        <SectionWrap>
-          <Hero imageAlt={"hero.imageAlt"} id="hero" />
-          <Section>
-            Hi!
-          </Section>
-        </SectionWrap>
-      </Layout>
-    </ThemeProvider>
+    <Page>
+      <Hero imageAlt={"hero.imageAlt"} id="hero" />
+      <Section>
+        Hey there, and welcome to my portfolio site! 
+        Sorry, but there's not really a lot here at the
+        moment. Our construction owls are hard at work building me
+        an awesome homepage for posting about the cool stuff I do. 
+        Check back later!
+      </Section>
+    </Page>
   );
 }
 
-export default IndexPage;
+export default Index;

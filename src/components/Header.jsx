@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Styled } from "theme-ui"
 import { StyledHeader, Nav, NavItem, NavList, NavLink } from "gatsby-theme-scarlet/src/components/styles"
 
-export default function Header({ siteTitle }) {
+export default function Header() {
   return (
     <StyledHeader>
       <Container>
