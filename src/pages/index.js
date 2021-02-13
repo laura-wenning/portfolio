@@ -4,14 +4,11 @@ import { ThemeProvider, Layout } from "theme-ui"
 import theme from "gatsby-theme-scarlet/src/gatsby-plugin-theme-ui";
 import { Global } from "@emotion/core"
 import { globalStyles } from "gatsby-theme-scarlet/src/templates/styles"
-import { Header } from "gatsby-theme-scarlet/src/components"
+import Header from "../components/header";
+import Hero from "../components/hero";
 import Helmet from "react-helmet"
-
-
-import { Link } from "gatsby"
-
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { SectionWrap } from "gatsby-theme-scarlet/src/components/styles"
+import { Section } from "gatsby-theme-scarlet/src/components"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -37,7 +34,7 @@ const IndexPage = () => {
     description,
     language,
   } = data.site.siteMetadata
-  console.log(theme)
+  // console.log(theme)
 
   return (
     <ThemeProvider theme={theme}>
@@ -49,7 +46,12 @@ const IndexPage = () => {
         </Helmet>
         <Global styles={globalStyles} />
         <Header />
-        Hi
+        <SectionWrap>
+          <Hero imageAlt={"hero.imageAlt"} id="hero" />
+          <Section>
+            Hi!
+          </Section>
+        </SectionWrap>
       </Layout>
     </ThemeProvider>
   );
