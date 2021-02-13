@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Laura's Portfolio`,
+    title: `Laura Wenning - Portfolio`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@laurawenning`,
+    author: `Laura Wenning`,
+    language: "en"
   },
   plugins: [
-    `@rennehir/gatsby-theme-personal-site`
+    `gatsby-theme-scarlet`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
