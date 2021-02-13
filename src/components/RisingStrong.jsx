@@ -21,7 +21,7 @@ function RisingStrong({ text }) {
         opacity: [0,1],
         easing: "easeOutExpo",
         duration: 2400,
-        delay: (el, i) => 600 + 60 * i
+        delay: (el, i) => 400 + 60 * i
       }
     ]}>
       <div style={{display: "inline-block"}} className="rising-strong">
