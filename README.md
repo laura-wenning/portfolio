@@ -1,2 +1,2 @@
-# hey-waffles.github.io
-Laura's Github Pages Repo. Check it at laurawenning.com
+# Portfolio!
+This is the source code for Laura's portfolio website. It's at an early stage now, but it should one day have my full resume, a list of my projects, and perhaps even a blog. And cat pictures, for Harrowhark is adorable and must be shared with the world. 
