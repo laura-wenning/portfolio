@@ -22,26 +22,30 @@ function Hero() {
 
   return (
     <StyledHero>
-      <div style={{position: "absolute", display: "flex", justifyContent: "center", width: "100%", color: "whitesmoke"}}>
-        <h1 style={{fontSize: "3em", paddingRight: "1em"}}>Hey!<br/>I'm <RisingStrong text="Laura!"/></h1>
-        <Anime initial={[
-          {
-            targets: '.gatsby-image-wrapper',
-            translateX: ["500px","0px"],
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 3500,
-            delay: 2250
-          }
-        ]}>
-          <Img
-            id="profile-image"
-            fixed={data.file.childImageSharp.fixed}
-            alt={"imageAlt"}
-            // style={{ margin: "0 auto", height: "100%" }}
-            // imgStyle={SplashImageObj}
-          />
-        </Anime>
+      <div className="row" style={{position: "absolute", display: "flex", justifyContent: "center", width: "100%", color: "whitesmoke"}}>
+        <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-right hi-im-laura">
+          <h1 style={{fontSize: "3em", paddingRight: "1em"}}>Hey!<br/>I'm <RisingStrong text="Laura!"/></h1>
+        </div>
+        <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-left">
+          <Anime initial={[
+            {
+              targets: '.gatsby-image-wrapper',
+              translateX: ["500px","0px"],
+              opacity: [0,1],
+              easing: "easeOutExpo",
+              duration: 3500,
+              delay: 2250
+            }
+          ]}>
+            <Img
+              id="profile-image"
+              fixed={data.file.childImageSharp.fixed}
+              alt={"imageAlt"}
+              // style={{ margin: "0 auto", height: "100%" }}
+              // imgStyle={SplashImageObj}
+            />
+          </Anime>
+        </div>
       </div>
       <AnimatedWave enableWave bottom={true} />
     </StyledHero>

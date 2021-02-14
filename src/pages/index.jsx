@@ -4,6 +4,8 @@ import Page from "../components/Page";
 
 import { Section } from "gatsby-theme-scarlet/src/components"
 
+import "../styles/home.scss";
+
 function Index() {
   return (
     <Page>
