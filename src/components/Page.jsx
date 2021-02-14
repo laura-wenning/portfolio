@@ -1,16 +1,18 @@
-import React from "react"
+import React from "react";
+
+import Helmet from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import { ThemeProvider, Layout } from "theme-ui"
 import theme from "gatsby-theme-scarlet/src/gatsby-plugin-theme-ui";
 import { Global } from "@emotion/core"
 import { globalStyles } from "gatsby-theme-scarlet/src/templates/styles"
-import Header from "../components/header";
-import Hero from "../components/hero";
-import Helmet from "react-helmet"
+import Header from "./Header";
 import { SectionWrap } from "gatsby-theme-scarlet/src/components/styles"
-import { Section } from "gatsby-theme-scarlet/src/components"
+import Footer from "./Footer";
 
-const IndexPage = () => {
+import "../styles/index.scss"
+
+function Page({ children, pageTitle }) {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -30,31 +32,30 @@ const IndexPage = () => {
 
   const {
     title,
-    siteLogoText,
     description,
     language,
   } = data.site.siteMetadata
-  // console.log(theme)
 
   return (
     <ThemeProvider theme={theme}>
       <Layout>
         <Helmet>
           <html lang={language} />
-          <title>{title}</title>
+          <title>{pageTitle | title}</title>
           <meta name="Description" content={description} />
+          {/* Load Bootstrap via CDN, since this breaks with SSR */}
+          {/* Replace with something else here: https://www.gatsbyjs.com/docs/using-client-side-only-packages/ */}
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         </Helmet>
         <Global styles={globalStyles} />
         <Header />
         <SectionWrap>
-          <Hero imageAlt={"hero.imageAlt"} id="hero" />
-          <Section>
-            Hi!
-          </Section>
+          {children}
         </SectionWrap>
+        <Footer/>
       </Layout>
     </ThemeProvider>
-  );
+  )
 }
 
-export default IndexPage;
+export default Page;
