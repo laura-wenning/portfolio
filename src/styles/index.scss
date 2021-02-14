@@ -1,9 +1,46 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// HEADER
+.logo:active {
+  color: whitesmoke;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navlist {
+  padding-top: 1em;
+}
+
+.navhamburger {
+  position: absolute !important;
+  color: whitesmoke !important;
+  right: 1em;
+  bottom: 0.35em;
+
+  font-size: 1.5em;
+
+  a:hover {
+    color: whitesmoke !important;
+  }
+}
+
+.navcollapse {
+  li:active, li:visited {
+    background-color: inherit;
+  }
+  .dropdown-item {
+    color: whitesmoke;
+  }
+}
+
+// FOOTER
 .footer {
-  height: "5em";
-  padding: "1em";
+  height: 5em;
+  padding: 1em;
 
   color: whitesmoke;
-  font-weight: "700";
+  font-weight: 700;
 
   a {
     font-size: 2em;

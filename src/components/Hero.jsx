@@ -1,8 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StyledHero, SplashImageObj } from "gatsby-theme-scarlet/src/components/styles"
-import { AnimatedWave } from "gatsby-theme-scarlet/src/components"
-import { Col, Container, Row } from "react-bootstrap";
+import { AnimatedWave } from "gatsby-theme-scarlet/src/components";
 import RisingStrong from "./RisingStrong";
 import Img from "gatsby-image"
 import ReactAnime from "react-animejs";
@@ -21,7 +20,6 @@ function Hero() {
     }
   `)
 
-  console.log(data)
   return (
     <StyledHero>
       <div style={{position: "absolute", display: "flex", justifyContent: "center", width: "100%", color: "whitesmoke"}}>
