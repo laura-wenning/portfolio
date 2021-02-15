@@ -4,6 +4,7 @@ import { StyledHeader, Nav, NavItem, NavList, NavLink } from "gatsby-theme-scarl
 import { FaBars } from "react-icons/fa";
 
 const pages = [
+  {text: "Projects", href: "/projects"},
   {text: "My Experience", href: "/experience"}
 ];
 

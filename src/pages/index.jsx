@@ -38,20 +38,12 @@ function Index() {
       </Section>
 
       <Section>
-        <h1 id="about"># About Me</h1>
         <div className="row" style={{marginBottom: "3em"}}>
           <div className="col-12 col-md-8">
+            <h1 id="about"># About Me</h1>
             <p>
               Hey there, I'm Laura! I'm a software developer who likes to make cool things in her free time. 
               I've got a dozen things I like to do. I code, I write, and occassionally I even go outside. 
-            </p>
-
-            <p>
-              I'm an avid fan of D&amp;D and tabletop games in general and have been working with
-              my partner <a href="https://lucyawrey.com">Lucy</a> to 
-              make a virtual tabletop webapp to solve the various issues we've had playing 
-              and running games over the Internet. You can read more about that over on 
-              my <a href="/projects#reroll">Projects page</a>.
             </p>
           </div>
 
@@ -65,6 +57,25 @@ function Index() {
             />
           </div>
         </div>
+        <h1 id="projects"># My Projects</h1>
+        <p>
+          I love making things, be it writing fiction, creating spanning campaigns with friends in D&amp;D, 
+          or learning how to sew to create cosplays of my favorite characters for conventions. 
+          My focus almost always comes back to coding projects, be it small scripts to solve a niche problem or sprawling webapps. 
+          It's just an easy and accessible way to build fantastic creations. 
+        </p>
+
+        <p>
+          My big project right now is Reroll, a soon to be renamed webapp designed to function in a similar capacity
+          to <a href="https://roll20.net">Roll20</a>. Together with <a href="https://lucyawrey.com">Lucy Awrey</a>,
+          we've been building a virtual tabletop toolchain for handling all of the disjointed aspects of our D&amp;D games,
+          from easily modifying character sheet structures to creating sprites or maps. It's a big project, but both
+          of us would love to see a comprehensive tool like it exist out in the world, and so we've been working on it
+          on and off for the past year. 
+        </p>
+
+        <p>That's just one of my projects, though. Check out the others on my <a href="/projects">Projects</a> page.</p>
+
         <h1 id="experience"># My Experience</h1>
         <p>
           I'm currently working at a cool company called Clinc. 
