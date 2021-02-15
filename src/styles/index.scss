@@ -34,6 +34,20 @@
   }
 }
 
+section {
+  height: auto !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+// SCARLET THEME OVERRIDES
+.body {
+  margin-top: 7em;
+}
+.body h1, h2, h3, h4 {
+  color: #53388a;
+}
+
 // FOOTER
 .footer {
   height: 5em;

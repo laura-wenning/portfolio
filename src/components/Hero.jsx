@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StyledHero, SplashImageObj } from "gatsby-theme-scarlet/src/components/styles"
 import { AnimatedWave } from "gatsby-theme-scarlet/src/components";
-import RisingStrong from "./RisingStrong";
+import RisingStrong from "./animations/RisingStrong";
 import Img from "gatsby-image"
 import ReactAnime from "react-animejs";
 const { Anime } = ReactAnime;
@@ -21,15 +21,15 @@ function Hero() {
   `)
 
   return (
-    <StyledHero>
+    <StyledHero className="hero">
       <div className="row" style={{position: "absolute", display: "flex", justifyContent: "center", width: "100%", color: "whitesmoke"}}>
         <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-right hi-im-laura">
-          <h1 style={{fontSize: "3em", paddingRight: "1em"}}>Hey!<br/>I'm <RisingStrong text="Laura!"/></h1>
+          <h1 style={{fontSize: "3em", paddingRight: "1em", color: "whitesmoke"}}>Hey!<br/>I'm <RisingStrong text="Laura!"/></h1>
         </div>
         <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-left">
-          <Anime initial={[
+          <Anime id="profile-anime" initial={[
             {
-              targets: '.gatsby-image-wrapper',
+              targets: '#profile-anime>.gatsby-image-wrapper',
               translateX: ["500px","0px"],
               opacity: [0,1],
               easing: "easeOutExpo",

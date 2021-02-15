@@ -49,7 +49,7 @@ function Page({ children, pageTitle }) {
         </Helmet>
         <Global styles={globalStyles} />
         <Header />
-        <SectionWrap>
+        <SectionWrap className="body">
           {children}
         </SectionWrap>
         <Footer/>
