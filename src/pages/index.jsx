@@ -7,6 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { SplashImageObj } from "gatsby-theme-scarlet/src/components/styles"
 
 import { Section } from "gatsby-theme-scarlet/src/components"
+import resume from "../data/laurawenning_resume_2021-02-15.pdf"
 
 import "../styles/home.scss";
 
@@ -87,6 +88,10 @@ function Index() {
 
         <p>
           You can check out my other experience <a href="/experience">here</a>!
+        </p>
+
+        <p>
+          You can also check out my <a href={resume} download>resume!</a>
         </p>
       </Section>
     </Page>
