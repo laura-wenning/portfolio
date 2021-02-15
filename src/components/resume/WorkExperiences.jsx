@@ -5,24 +5,22 @@ import "../../styles/components/workExperience.scss"
 function WorkExperience({ companyName, title, time, details }) {
   const compiledDetails = [];
   (details || []).forEach(detail => {
-    compiledDetails.push(<li>{detail}</li>)
+    compiledDetails.push(<li key={detail}>{detail}</li>)
   });
   return (
-    <>
-      <p className="work-experience">
-        <div className="work-title">
-          <h2>{companyName}</h2>
-          <span className="d-inline d-md-none"><br/></span>
-          <h4 className="d-none d-md-inline">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-          <h4>{title}</h4>
-        </div>
-        <hr/>
-        <div className="work-time">{time}</div>
-        <ul>
-          {compiledDetails}
-        </ul>
-      </p>
-    </>
+    <div className="work-experience">
+      <div className="work-title">
+        <h2>{companyName}</h2>
+        <span className="d-inline d-md-none"><br/></span>
+        <h4 className="d-none d-md-inline">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+        <h4>{title}</h4>
+      </div>
+      <hr/>
+      <div className="work-time">{time}</div>
+      <ul>
+        {compiledDetails}
+      </ul>
+    </div>
   );
 }
 
@@ -58,15 +56,15 @@ function WorkExperiences() {
   const workExperiences = [];
   workText.forEach(work => {
     workExperiences.push(
-      <WorkExperience companyName={work.name} title={work.title} time={work.time} details={work.details}/>
+      <WorkExperience key={work.name} companyName={work.name} title={work.title} time={work.time} details={work.details}/>
     );
   });
 
   // TODO - GQL fetch data
   return (
-    <>
+    <div>
       {workExperiences}
-    </>
+    </div>
   )
 }
 

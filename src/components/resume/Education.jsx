@@ -29,7 +29,7 @@ function Education() {
   const educationItems = []
   educations.forEach(education => {
     educationItems.push(
-      <EducationItem name={education.name} time={education.time} text={education.text}/>
+      <EducationItem key={education.name} name={education.name} time={education.time} text={education.text}/>
     );
   })
   return (
