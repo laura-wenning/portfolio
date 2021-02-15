@@ -4,7 +4,7 @@ import Page from "../components/Page";
 import Wiggle from "../components/animations/Wiggle";
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import { StyledHero, SplashImageObj } from "gatsby-theme-scarlet/src/components/styles"
+import { SplashImageObj } from "gatsby-theme-scarlet/src/components/styles"
 
 import { Section } from "gatsby-theme-scarlet/src/components"
 
@@ -38,7 +38,7 @@ function Index() {
       </Section>
 
       <Section>
-        <h1># About Me</h1>
+        <h1 id="about"># About Me</h1>
         <div className="row" style={{marginBottom: "3em"}}>
           <div className="col-12 col-md-8">
             <p>
@@ -65,7 +65,7 @@ function Index() {
             />
           </div>
         </div>
-        <h1># My Experience</h1>
+        <h1 id="experience"># My Experience</h1>
         <p>
           I'm currently working at a cool company called Clinc. 
           We do cool stuff with artificial intelligence that lets people control their finances through

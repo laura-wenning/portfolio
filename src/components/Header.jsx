@@ -14,7 +14,7 @@ function NavDropdown() {
   const items = [];
   pages.forEach(page => {
     items.push(
-      <li><a className="dropdown-item" href={page.href}>{page.text}</a></li>
+      <li key={page.href}><a className="dropdown-item" href={page.href}>{page.text}</a></li>
     );
   });
 
@@ -34,7 +34,7 @@ function NavTabs() {
   const items = [];
   pages.forEach(page => {
     items.push(
-      <NavItem>
+      <NavItem key={page.href}>
         <NavLink href={page.href}>{page.text}</NavLink>
       </NavItem>
     );

@@ -1,0 +1,132 @@
+{
+  "proficiencies": [
+    "Extremely Proficient",
+    "Proficient",
+    "Familiar"
+  ],
+  "technologyAreas": [
+    {"name": "Languages", "key": "languages"},
+    {"name": "Frameworks and Libraries", "key": "libraries"},
+    {"name": "Technologies", "key": "technologies"}
+  ],
+  "languages": [
+    {
+      "name": "Typescript / Javascript",
+      "key": "js",
+      "proficiency": 0,
+      "text": "I'm quite familiar with Javascript and Typescript. The majority of my larger personal projects, like Reroll or my personal portfolio, are written using Javascript or Typescript. I personally prefer Typescript for larger projects or with projects with complex data passing, making it a great fit for Reroll."
+    },
+    {
+      "name": "Python",
+      "key": "py",
+      "proficiency": 0,
+      "text": "I'm proficient with Python, having first learned it to attempt a 2D rogue-like. While the game project was abandoned, I did later use the language to script out several quick actions, such as the sprite extrator or the compendium reader."
+    },
+    {
+      "name": "Bash",
+      "key": "sh",
+      "proficiency": 1,
+      "text": "Bash is a language I've been learning while working at Clinc."
+    },
+    {
+      "name": "CSS / SCSS",
+      "key": "css",
+      "proficiency": 1,
+      "text": "I'm good with CSS, but I'm awful at design. Give me a pretty picture, though, and I can replicate it."
+    },
+    {
+      "name": "Coldfusion Markup Language",
+      "key": "cfml",
+      "proficiency": 1,
+      "text": "CFML is a language I learned while working at Saltech for both ColdFusion and Lucee."
+    },
+    {
+      "name": "Java",
+      "key": "java",
+      "proficiency": 2,
+      "text": "I learned Java at Iowa State University, though it's been a while since I've used it."
+    }
+  ],
+  "libraries": [
+    {
+      "name": "React",
+      "key": "react",
+      "proficiency": 0,
+      "text": ""
+    },
+    {
+      "name": "NextJS",
+      "key": "nextjs",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "Gatsby",
+      "key": "gatsby",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "Vue",
+      "key": "vue",
+      "proficiency": 2,
+      "text": ""
+    },
+    {
+      "name": "CFWheels",
+      "key": "cfwheels",
+      "proficiency": 2,
+      "text": ""
+    },
+    {
+      "name": "Angular.js / Angular 2+",
+      "key": "angular",
+      "proficiency": 2,
+      "text": ""
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Docker",
+      "key": "docker",
+      "proficiency": 0,
+      "text": ""
+    },
+    {
+      "name": "Kubernetes",
+      "key": "k8s",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "Amazon Web Services",
+      "key": "aws",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "MongoDB",
+      "key": "mongo",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "MySQL / MariaDB",
+      "key": "mysql",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "Nginx",
+      "key": "nginx",
+      "proficiency": 1,
+      "text": ""
+    },
+    {
+      "name": "ColdFusion 8+ / Lucee 5.2",
+      "key": "vue",
+      "proficiency": 2,
+      "text": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.technologies {
+  .accordion{
+    margin-top: 1em;
+    margin-bottom: 2em;
+  
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: inherit;
+    color: inherit;
+  }
+}
