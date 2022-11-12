@@ -8,7 +8,7 @@ import projects from "../data/projects.json";
 
 function Projects() {
   return (
-    <Page>
+    <Page pageTitle="Laura Wenning | Projects">
       <Section>
         <h1># Coding Projects</h1>
         <CodeProjects data={projects.coding}/>

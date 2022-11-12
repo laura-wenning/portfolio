@@ -25,25 +25,15 @@ function Index() {
   `);
 
   return (
-    <Page>
+    <Page pageTitle="Laura Wenning">
       <Hero imageAlt={"hero.imageAlt"} id="hero" />
-      <Section>
-        <h1># Under Construction</h1>
-        <p>
-          Hey there, and welcome to my <Wiggle text="portfolio site"/>! 
-          Sorry, but there's not really a lot here at the
-          moment. Our construction owls are hard at work building me
-          an awesome homepage for posting about the cool stuff I do. 
-          Check back later!
-        </p>
-      </Section>
 
       <Section>
         <div className="row" style={{marginBottom: "3em"}}>
           <div className="col-12 col-md-8">
             <h1 id="about"># About Me</h1>
             <p>
-              Hey there, I'm Laura! I'm a software developer who likes to make cool things in her free time. 
+              Hey there, I'm <Wiggle text="Laura!"/> I'm a software developer who likes to make cool things in her free time. 
               I've got a dozen things I like to do. I code, I write, and occassionally I even go outside. 
             </p>
           </div>
@@ -60,14 +50,14 @@ function Index() {
         </div>
         <h1 id="projects"># My Projects</h1>
         <p>
-          I love making things, be it writing fiction, creating spanning campaigns with friends in D&amp;D, 
+          I love making things, be it writing fiction, creating spanning campaigns with friends in Dungeons &amp; Dragons, 
           or learning how to sew to create cosplays of my favorite characters for conventions. 
           My focus almost always comes back to coding projects, be it small scripts to solve a niche problem or sprawling webapps. 
           It's just an easy and accessible way to build fantastic creations. 
         </p>
 
         <p>
-          My big project right now is Reroll, a soon to be renamed webapp designed to function in a similar capacity
+          My big project right now is Lantern Tabletop, a web app designed to function in a similar capacity
           to <a href="https://roll20.net">Roll20</a>. Together with <a href="https://lucyawrey.com">Lucy Awrey</a>,
           we've been building a virtual tabletop toolchain for handling all of the disjointed aspects of our D&amp;D games,
           from easily modifying character sheet structures to creating sprites or maps. It's a big project, but both
@@ -79,11 +69,16 @@ function Index() {
 
         <h1 id="experience"># My Experience</h1>
         <p>
-          I'm currently working at a cool company called Clinc. 
-          We do cool stuff with artificial intelligence that lets people control their finances through
-          voice command, similar to how Google Home or Siri work. 
-          I work with the Engineering Operations team for all of the dev ops aspects of our platform, 
-          working with Docker, Kubernetes, and AWS to get the job done. 
+          I'm currently taking a break from a professional career to develop a personal project called Lantern Tabletop.
+          Our goal is to create a service that is as light-weight on server usage as possible to create a user-friendly environment for playing Dungeons &amp; Dragons or other tabletop games without the need to heavily monetize or disrupt the experience with advertisements.
+          You can read more about it on the <a href="/projects">Projects page</a> or on <a href="https://github.com/owl-factory/lantern">Github</a>.
+        </p>
+
+        <p>
+          Prior to developing Lantern Tabletop, I worked at the Ford Motor Company. 
+          I developed an application for streamlining the process of requesting data from vehicles, allowing orders to be quickly placed and approved.
+          This involved the use of Java, Spring Boot, and Angular to create a frontend system for placing orders and various microservices to handle the
+          large quantities of data retrieved before packaging them up for consumption. 
         </p>
 
         <p>

@@ -1,13 +1,13 @@
 {
   "coding": [
     {
-      "name": "Reroll",
+      "name": "Lantern Tabletop",
       "text": [
         "If you've read the home page, you should know that I'm something of a huge D&D nerd. I play as a character, I run as a DM, and I sometimes try new systems. I've been playing continuously since May 2017 and almost exclusively online. And let me tell you: Roll20 is rough. It's not bad, per se, but there are questionable choices made that make the actual set up and play of the game more difficult in areas. Further, there are so many tools that work well solo, like character creators and map makers, but they're disconnected from the actual virtual tabletop.",
-        "Reroll (name to be changed) is our take on a solution to the problem. Together with Lucy Awrey, we've been working on and off on this project for over a year, playing with technologies and finding the best solution that fits our needs while being easy to work with. It is by far the project I've put the most time into, and it is easily the one I'm most excited for.",
-        "Reroll is built using React on top of NextJS to create a server-side rendered webapp."
+        "Lantern Tabletop is our take on a solution to the problem. Together with Lucy Awrey, we've been working on and off on this project for over a year, playing with technologies and finding the best solution that fits our needs while being easy to work with. It is by far the project I've put the most time into, and it is easily the one I'm most excited for.",
+        "Lantern is built using React on top of NextJS to create a server-side rendered web app."
       ],
-      "href": "https://github.com/lucyawrey/reroll"
+      "href": "https://github.com/owl-factory/lantern"
     },
     {
       "name": "Portfolio",
@@ -15,7 +15,7 @@
         "This site you're on right now! It's a simple, server-side rendered website that talks about how insanely cool I am and the sorts of things I like to do.",
         "The current version of this portfolio site was developed over the course of a single three-day weekend. It uses Gatsby and React as a base, with styling from gatsby-theme-scarlet and Bootstrap, and is hosted on Netlify."
       ],
-      "href": "https://github.com/hey-waffles/portfolio"
+      "href": "https://github.com/laura-wenning/portfolio"
     },
     {
       "name": "Home Server",
@@ -31,7 +31,7 @@
         "Enter the sprite extractor. While working on an earlier, now-abandoned project in my quest to learn about Python, I learned about PyGame and it's handy ability to slice images and export them. So I threw together a quick script that you can drag a spritesheet over and BOOM! Auto-trimmed sprite. Perfect.",
         "Since then, the sprite extractor has been expanded, getting code clean ups and additions to allow for profile images to be extracted and 'shrinking' characters by adding transparent padding to the top and sides."
       ],
-      "href": "https://github.com/hey-waffles/sprite-extractor"
+      "href": "https://github.com/laura-wenning/sprite-extractor"
     },
     {
       "name": "Compendium Reader",
@@ -39,7 +39,7 @@
         "One thing that's incredibly useful when playing D&D games is notetaking. There are tons of characters, places, events, and so on, which can lead to players saying \"What?\" when they meet someone who they last interacted with months ago in real life. Unfortunately, when a campaign stretches over a year or more, these notes become less helpful as information is mixed up just about everywhere. My solution was to create a Compendium, a single document that organized notes into a single resource over 100 pages long. Splitting it up into different discrete resources was one solution, but it was a holding action as those Compendiums grew",
         "The Compendium Reader is a simple script I wrote in Python to pull these Compendiums and convert them into YAML, in the hope of moving them to a new place to live, be it a locally-hosted Wiki or a different medium entirely. While nothing has been done with the data as of yet, the Compendium Reader works perfectly."
       ],
-      "href": "https://github.com/hey-waffles/compendium-reader"
+      "href": "https://github.com/laura-wenning/compendium-reader"
 
     }
   ]
