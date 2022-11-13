@@ -9,7 +9,7 @@ import Education from "../components/resume/Education"
 
 function Resume() {
   return (
-    <Page>
+    <Page pageTitle="Laura Wenning | Experience">
       <Section id="experience">
         <h1># Work Experience</h1>
         <WorkExperiences/>

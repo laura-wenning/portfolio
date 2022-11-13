@@ -12,7 +12,7 @@ function WorkExperience({ companyName, title, time, details }) {
       <div className="work-title">
         <h2>{companyName}</h2>
         <span className="d-inline d-md-none"><br/></span>
-        <h4 className="d-none d-md-inline">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+        <h4 className="d-none d-md-inline">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</h4>
         <h4>{title}</h4>
       </div>
       <hr/>
@@ -26,8 +26,18 @@ function WorkExperience({ companyName, title, time, details }) {
 
 function WorkExperiences() {
   const workText = [
+    {
+      name: "Ford Motor Company", title: "Software Engineer", time: "April 2021 - April 2022",
+      details: [
+        "Developed and maintained the front- and back-end components of an internal vehicle data ordering service using Java, Spring Boot, Typescript, and Angular.",
+        "Developed and deployed microservices to aid in alleviating server load.",
+        "Integrated different software messaging systems, including RabbitMQ and Kafka, between various microservices",
+        "Implemented a complete styling overhaul to match new company-wide standards in tandem with a related team.",
+        "Frequently paired with teammates to learn, instruct, and program in tandem.",
+      ]
+    },
     { 
-      name: "Clinc, Inc", title: "Software Engineer II", time: "November 2019 - present", 
+      name: "Clinc, Inc", title: "Software Engineer II", time: "November 2019 - February 2021", 
       details: [
         "Maintained and improved Kubernetes clusters for development, staging, and production deployments.",
         "Maintained Gitlab Runners using AWS EC2 containers to allow for continuous testing and deployment.",
