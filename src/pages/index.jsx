@@ -71,7 +71,7 @@ function Index() {
         <p>
           I'm currently taking a break from a professional career to develop a personal project called Lantern Tabletop.
           Our goal is to create a service that is as light-weight on server usage as possible to create a user-friendly environment for playing Dungeons &amp; Dragons or other tabletop games without the need to heavily monetize or disrupt the experience with advertisements.
-          You can read more about it on the <a href="/projects">Projects page</a> or on <a href="https://github.com/owl-factory/lantern">Github</a>.
+          You can read more about it on the <a href="/projects">Projects page</a>, check out our <a href="/lantern">character sheet demo</a>, or watch our progress on <a href="https://github.com/owl-factory/lantern">Github</a>.
         </p>
 
         <p>
