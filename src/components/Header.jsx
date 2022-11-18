@@ -5,7 +5,8 @@ import { FaBars } from "react-icons/fa";
 
 const pages = [
   {text: "Projects", href: "/projects"},
-  {text: "My Experience", href: "/experience"}
+  {text: "My Experience", href: "/experience"},
+  {text: "Lantern Tabletop", href: "/lantern"}
 ];
 
 /**
